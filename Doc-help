@@ -57,3 +57,6 @@ git checkout master
 #lancer pull 
 git pull origin master
 
+ cancel commit 
+ $ git reset --hard HEAD~1
+
