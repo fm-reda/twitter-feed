@@ -20,5 +20,21 @@ npm install --save react-twitter-embed
 #recuper les origin de github
 git remote -v
 ------------------------------------
-pour ajouter les modification 
+#pour ajouter les modification 
 git add .
+
+#pour structurer les modification 
+git commit -m "coment ex:new branch/ update mybranch"
+git remote add
+
+#pour verifier la branch actuel
+#git checkout 
+
+#pour creer une branch
+git branch reda
+
+pour afiicher tous les branch existe
+#git branch 
+
+pour switcher une branch 
+#git checkout nameOfBranch
