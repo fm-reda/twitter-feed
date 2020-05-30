@@ -1,0 +1,24 @@
+-------------------------------
+-------  #GetStarted        ---
+-------------------------------
+#installer axios pour requete api
+nmp install axios
+------------------------------------------------
+#apres clonage installer node_modules
+npm install
+-----------------------------------------------
+#pour installer template twiter
+npm install --save react-twitter-embed
+
+------------------------------------------------------
+
+
+-------------------------------
+-------  #github        ---
+-------------------------------
+
+#recuper les origin de github
+git remote -v
+------------------------------------
+pour ajouter les modification 
+git add .
