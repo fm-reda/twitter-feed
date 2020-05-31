@@ -36,7 +36,7 @@ export class Search extends Component {
     } else {
       const api = `https://cors-anywhere.herokuapp.com/https://api.twitter.com/1.1/search/tweets.json?q=${search}&result_type=mixed&count=${count}`;
       axios
-        .get(api, { headers: { Authorization: `Bearer ${tokenApp}` } })
+        .get(api, { headers: { Authorization: `Bearer ${tokenRandom}` } })
         .then((res) => {
           this.setState({
             tweet: res.data.statuses,
@@ -54,10 +54,10 @@ export class Search extends Component {
     this.setState({ search: e.target[0].value });
     // console.log(e.target[1].value);
     this.setState({ count: e.target[1].value });
+    this.gettwitte(this.state.search, this.state.count);
   };
   componentDidUpdate() {
     // console.log(this.state.search);
-    this.gettwitte(this.state.search, this.state.count);
   }
   componentDidMount() {}
 
