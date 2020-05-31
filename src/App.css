@@ -1,1 +1,8 @@
-.bg-twitter {}
+.bg-twitter {
+  background-color: #1da1f2;
+}
+
+.body-cl {
+  /* background-color: red; */
+  min-height: 60vh;
+}

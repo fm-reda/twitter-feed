@@ -4,7 +4,7 @@ import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home";
-import Favoris from "./components/Favoris";
+import Favoris from "./components/Bookmarks";
 import Live from "./components/Live";
 
 import "./App.css";
@@ -14,13 +14,13 @@ export default class App extends Component {
     return (
       <div>
         <Header />
-        <div className="App container mt-5">
+        <div className="App container mt-5 body-cl">
           <Home />
           <Favoris />
           <Live />
           {/* <Main /> */}
-          <Footer />
         </div>
+        <Footer />
       </div>
     );
   }
