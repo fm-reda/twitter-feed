@@ -28,7 +28,6 @@ export class Search extends Component {
   }
 
   gettwitte = (search, count) => {
-    console.log(search);
     if (search == "") {
       alert("merci de mettre un mot pour la recherche");
     } else {
