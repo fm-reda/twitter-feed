@@ -5,7 +5,7 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-twitter">
           <a className="navbar-brand" href="#">
             Feed Twitter
           </a>
@@ -22,7 +22,7 @@ export default class Header extends Component {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarColor01 ">
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav mr-auto text-white">
               <li className="nav-item active">
                 <a className="nav-link" href="#">
                   Home <span className="sr-only">(current)</span>
