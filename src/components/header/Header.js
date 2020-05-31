@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../../App.css";
 
 export default class Header extends Component {
   render() {
@@ -29,7 +30,7 @@ export default class Header extends Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Favoris 
+                  Favoris
                 </a>
               </li>
               <li className="nav-item">
