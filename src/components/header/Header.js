@@ -29,7 +29,7 @@ export default class Header extends Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Favoris
+                  Favoris 
                 </a>
               </li>
               <li className="nav-item">
