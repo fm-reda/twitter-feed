@@ -6,3 +6,6 @@
   /* background-color: red; */
   min-height: 60vh;
 }
+a.nav-link {
+  color: #ffffff !important ;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Search from "./Search";
+import Search from "../Dev-comp/Search";
 
 export default class Main extends Component {
   render() {

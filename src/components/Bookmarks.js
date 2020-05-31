@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 
-export default class Favoris extends Component {
+export default class Bookmarks extends Component {
   render() {
-    return <div>FAVORIS</div>;
+    return (
+      <div>
+       <h1>Bookmarks Page</h1>
+      </div>
+    );
   }
 }
