@@ -28,13 +28,15 @@ export class Search extends Component {
   }
 
   gettwitte = (search, count) => {
+    const tokenRandom = `AAAAAAAAAAAAAAAAAAAAAAs5%2FAAAAAAA%2BFhxtLDRr2AuKh5zdIHTczhg0Jg%3DltF0dqGzLFlmXH9wjI8HkO1gEzGlnCYUegwIOVVu1Umn8Yi1sX`;
+    const tokenApp = `AAAAAAAAAAAAAAAAAAAAAGZtEgEAAAAA%2BFTRfdzKslvseLjUL6%2BmE7WhL7w%3Da4qVaLEW53IKvaLmPyDO3lVyq7p6pxIPoPWZaZDX9evKqcFUVt`;
+
     if (search == "") {
       alert("merci de mettre un mot pour la recherche");
     } else {
       const api = `https://cors-anywhere.herokuapp.com/https://api.twitter.com/1.1/search/tweets.json?q=${search}&result_type=mixed&count=${count}`;
-      const token = `AAAAAAAAAAAAAAAAAAAAAAs5%2FAAAAAAA%2BFhxtLDRr2AuKh5zdIHTczhg0Jg%3DltF0dqGzLFlmXH9wjI8HkO1gEzGlnCYUegwIOVVu1Umn8Yi1sX`;
       axios
-        .get(api, { headers: { Authorization: `Bearer ${token}` } })
+        .get(api, { headers: { Authorization: `Bearer ${tokenApp}` } })
         .then((res) => {
           this.setState({
             tweet: res.data.statuses,
