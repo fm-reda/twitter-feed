@@ -18,10 +18,10 @@ export default class App extends Component {
         <Router>
           <Header />
           <Switch>
-            <div className="App container mt-5 body-cl">
+            <div className="mt-5 body-cl">
               <Route path="/" exact component={Home} />
               <Route path="/bookmarks" component={Bookmarks} />
-              <Route path="/dev" component={Dev} />
+              <Route path="/dev" exact component={Dev} />
               <Route path="/live" component={Live} />
               {/* <Home /> */}
               {/* <Bookmarks /> */}

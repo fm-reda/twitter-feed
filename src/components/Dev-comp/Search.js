@@ -88,7 +88,7 @@ export class Search extends Component {
             placeholder="Search"
             onChange={this.handleChange}
           />
-          <select className="mdb-select md-form mr-2">
+          <select className="form-control mdb-select md-form mr-2">
             <option value={this.state.count} disabled selected>
               Number of tweets
             </option>
