@@ -45,7 +45,7 @@ export class Search extends Component {
     }
   };
   handleChange = (e) => {
-    // console.log(e.target.value);
+    this.setState({ search: e.target[0].value });
   };
   handleSubmit = (e) => {
     e.preventDefault();
@@ -113,6 +113,8 @@ export class Search extends Component {
                 </a>
               </div>
             ))}
+
+            <TwitterMomentShare momentId={"650667182356082688"} />
           </div>
         </div>
       </div>

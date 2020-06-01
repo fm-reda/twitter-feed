@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../../App.css";
-import logo from "../../img/logo.jpg";
+import logo from "../../img/KLIR.png";
 import { Link } from "react-router-dom";
 
 export default class Header extends Component {

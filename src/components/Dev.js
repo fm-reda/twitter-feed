@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./dev.css";
 import Home from "./Home";
 import NewComp from "./Dev-comp/NewComp";
+import Live from "./Dev-comp/Live";
 
 export default class Dev extends Component {
   render() {
@@ -30,6 +31,15 @@ export default class Dev extends Component {
                   NewComp
                 </Link>
               </li>
+              <li className="sidebar-link">
+                <Link
+                  className=""
+                  to="/dev/live"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  Live
+                </Link>
+              </li>
 
               {/* //*************************New link ***************** */}
               {/* <li className="sidebar-link">
@@ -45,6 +55,7 @@ export default class Dev extends Component {
           <Switch>
             <Route path="/dev/search" exact component={Search} />
             <Route path="/dev/newcomp" exact component={NewComp} />
+            <Route path="/dev/live" exact component={Live} />
 
             {/* //*************************New Route ****************** */}
             {/* <Route path="/dev/newcomp" exact component={NewComp} /> */}
