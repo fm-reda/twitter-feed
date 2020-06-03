@@ -45,7 +45,8 @@ export class Search extends Component {
     }
   };
   handleChange = (e) => {
-    this.setState({ search: e.target[0].value });
+    // console.log(e.target );
+    this.setState({ search: e.target.value });
   };
   handleSubmit = (e) => {
     e.preventDefault();
