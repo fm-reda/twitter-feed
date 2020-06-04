@@ -78,7 +78,7 @@ export class Search extends Component {
   render() {
     return (
       <div>
-        <h1>Search component</h1>
+        {/* <h1>Search component</h1> */}
         <form
           onSubmit={this.handleSubmit}
           className="form-inline my-2 my-lg-0 mt-5"
@@ -115,7 +115,7 @@ export class Search extends Component {
               </div>
             ))}
 
-            <TwitterMomentShare momentId={"650667182356082688"} />
+            {/* <TwitterMomentShare momentId={"650667182356082688"} /> */}
           </div>
         </div>
       </div>
