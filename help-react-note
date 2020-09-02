@@ -1,0 +1,11 @@
+#didmount+updatemout
+useEffect(() => {console.log(value);});
+
+#didmount only
+useEffect(() => {console.log(value)},[]);
+
+#mount update with variable
+useEffect(() => {console.log(value)},[state variable]);
+
+
+    setTweets({ modeMount: true, twDatasInit: tweets.twDatasInit,twDatas:tweets.twDatas });
