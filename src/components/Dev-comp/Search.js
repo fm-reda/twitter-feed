@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import Parser from "html-react-parser";
 import axios from "axios";
+import "../../App.css";
 
 // import Navbar from './Navbar';
 import {
@@ -34,10 +35,11 @@ export class Search extends Component {
     if (search == "") {
       alert("merci de mettre un mot pour la recherche");
     } else {
-      const api = `https://cors-anywhere.herokuapp.com/https://api.twitter.com/1.1/search/tweets.json?q=${search}&result_type=mixed&count=${count}`;
+      const api = `https://cors-anywhere.herokuapp.com/https://api.twitter.com/1.1/search/tweets.json?q=${search}&result_type=mixed&count=${count}&has:media`;
       axios
         .get(api, { headers: { Authorization: `Bearer ${tokenRandom}` } })
         .then((res) => {
+          console.log(res.data);
           this.setState({
             tweet: res.data.statuses,
           });
@@ -106,12 +108,20 @@ export class Search extends Component {
         <div className="container">
           <div className="row mt-5">
             {this.state.tweet.map((tw) => (
-              <div className="col-md-4 mt-4" key={tw.id_str}>
-                <TwitterTweetEmbed tweetId={tw.id_str} />
+              <div className="col-md-4 mt-4 tweet" key={tw.id_str}>
+                <TwitterTweetEmbed
+                  tweetId={tw.id_str}
+                  options={{
+                    conversation: "none",
+                    cards: "hidden",
+                    height: "500",
+                    // theme: "dark",
+                    borderColor: "#444444",
+                  }}
+                  // onLoad={action}
+                />
 
-                <a href="" className="btn btn-danger btn-blocl">
-                  Ajouter au favoris
-                </a>
+                {/* <TwitterTweetEmbed tweetId={tw.id_str} /> */}
               </div>
             ))}
 

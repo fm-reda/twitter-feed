@@ -12,3 +12,8 @@
   font-size: 20px;
   font-weight: 600;
 }
+
+.tweet {
+  background-color: red;
+  height: 200px;
+}

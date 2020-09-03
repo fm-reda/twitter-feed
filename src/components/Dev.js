@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./dev.css";
 import Home from "./Home";
 import NewComp from "./Dev-comp/NewComp";
-import Live from "./Dev-comp/Live";
+import Live from "./Dev-comp/LiveTweets";
 
 export default class Dev extends Component {
   render() {
